@@ -23,8 +23,8 @@ const handleCheckboxChange = (index) => { //aqui eu passo o index como parâmetr
 
 // Manipulador de evento para adicionar uma nova tarefa à lista
 const adicionarTarefa = () => {
-  if (novaTarefa.trim() !=="") { // trim para remover espaços da string
-    const novaTarefaObj = {tarefa: novaTarefa, status: false}; // para cria um novo objeto representando a nova tarefa com o texto fornecido e o status inicial como falso.
+  if (novaTarefa.trim() !== "") { // trim para remover espaços da string
+    const novaTarefaObj = { tarefa: novaTarefa, status: false }; // para cria um novo objeto representando a nova tarefa com o texto fornecido e o status inicial como falso.
     setTarefas([...tarefas, novaTarefaObj]); // Atualiza o estado das tarefas, adicionando a nova tarefa ao final do array
     setNovaTarefa(""); //limpa o campo deixando-o vazio
   }
@@ -32,7 +32,50 @@ const adicionarTarefa = () => {
 
 
 // Manipulador de evento para iniciar o modo de edição para uma tarefa
+const handleEditarClick = (index) => {
+  setEditandoIndex(index);
+  setMostrarModal(true); //chama o modal tornando-o visível
+}
 
+// Manipulador de evento para cancelar a edição de uma tarefa
+const handleConfirmarEdicao = (index, novoTexto) => {
+  const tarefasAtualizadas = [...tarefas];
+  tarefasAtualizadas[index].tarefa = novoTexto;
+  setTarefas(tarefasAtualizadas);//atualiza lista de tarefas
+  setEditandoIndex(null);
+  setMostrarModal(false); //remove modal 
+}
+
+// Manipulador de evento para confirmar a edição de uma tarefa
+const handleConfirmarEdicao = (index, novoTexto) => {
+  const tarefasAtualizadas = [...tarefas];
+  tarefasAtualizadas[index].tarefa = novoTexto; //adiciona a nova tarefa conforme sua posição
+  setTarefas(tarefasAtualizadas); //atualiza a lista de tarefa após a inserção da nova tarefa.
+  setEditandoIndex(null);
+  setMostrarModal(false); //remove o modal
+}
+
+// Manipulador de evento para iniciar a exclusão de uma tarefa
+const handleDeletarClick = (index) => {
+  setDeletandoIndex(index);
+  setmostrarConfirmarModal(true);
+}
+
+// Manipulador de evento para cancelar a exclusão de uma tarefa
+const handleCancelarDelecao = () => {
+  setDeletandoIndex(null); //cancela o ato de apagar o elemento conforme posição (index)
+  setmostrarConfirmarModal(false);
+
+}
+
+
+// Manipulador de evento para confirmar a exclusão de uma tarefa
+const handleConfirmarDelecao = () => {
+  const tarefasAtualizadas = tarefas.filter((_e, index) => index !== deletandoIndex);
+  setTarefas(tarefasAtualizadas); //retomar as tarefas atualizadas sem a que foi deletada
+  setDeletandoIndex(null);
+  setMostrarConfirmarModal(false);
+}
 
 
 
