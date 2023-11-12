@@ -1,0 +1,36 @@
+@use './assets/sass/variables' as *;
+
+*{
+    background-color: $first-color;
+}
+.header div{
+    height: 74px;
+    background-color: $second-color;
+}
+
+.header {
+    text-align: center;
+    background-color: $first-color;
+}
+
+.header h1{
+    padding-top: 100px;
+    background-color: $first-color;
+    color: $third-color;
+    padding-bottom: 150px;
+    
+}
+
+.header a{
+    
+    color: $third-color;
+    font-size: 25px;
+    background-color: $first-color;
+    
+}
+
+
+.header button{
+    border: none;
+}
+
