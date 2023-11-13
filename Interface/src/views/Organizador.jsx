@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { todoList } from "../data";
-import Modal from "./Modal";
-import ConfirmarModal from "./ConfirmarModal";
+import { todoList } from "../componentes/data";
+import Modal from "../componentes/Modal";
+import ConfirmarModal from "../componentes/ConfirmarModal";
+import "./Organizador.scss"
 
 function Tarefas() {
     // Variáveis de estado usando o hook 'useState' para gerenciar o estado do componente
@@ -77,10 +78,10 @@ function Tarefas() {
 
     // Renderizando a interface do componente
     return (
-        <div>
+      <div className="topo">
+          <div className="cabeçalho">
             <h2>Otimize seu tempo e se organize com o nosso planejador diário</h2>
 
-            <h3>Tarefa</h3>
             {/* Mapeando as tarefas para exibi-las */}
             {tarefas.map((e, index) => (
                 <div key={e.tarefa}>
@@ -143,6 +144,8 @@ function Tarefas() {
                 handleConfirmar={handleConfirmarDelecao}
             />
         </div>
+      </div>
+        
     )
 }
 

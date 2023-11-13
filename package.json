@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "create-vite": "^4.4.1",
     "sass": "^1.69.3"
   },
   "dependencies": {
