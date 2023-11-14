@@ -1,37 +1,42 @@
-/*@use './assets/sass/variables' as *;
+@use './assets/sass/variables' as *;
 
-*{
-    background-color: $first-color;
-}
-.header div{
+
+.pginicio{
+    background-color: $azul-color;
     height: 74px;
-    background-color: $second-color;
+   
 }
 
-.header {
+header{
+    background-color: $cinza-color;
+    align-items: center;
     text-align: center;
-    background-color: $first-color;
 }
 
-.header h1{
-    padding-top: 100px;
-    background-color: $first-color;
-    color: $third-color;
-    padding-bottom: 150px;
-    
-}
-
-.header a{
-    
-    color: $third-color;
-    font-size: 25px;
-    background-color: $first-color;
-    
+.bt{
+    background-color: $cinza-color;
 }
 
 
-.header button{
+h1{
+    color: $branco-color;
+    margin-top: 150px;
+    font-size: 50px;
+}
+
+.bt button{
     border: none;
+    margin-top: 150px;
+    
 }
 
-*/
+#lk{
+    color: $branco-color;
+    font-size: 35px;
+    background-color: $cinza-color;
+}
+
+#fim{
+    background-color: $cinza-color;
+    height: 265px;
+}

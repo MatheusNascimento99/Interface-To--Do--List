@@ -1,7 +1,52 @@
 @use '../assets/sass/variables' as *;
 
+// styles.scss
+
+
+
+// Restante do seu estilo aqui
+
+
 
 .topo{
-    background-color: $first-color;
-    margin-top: 74px;
+    background-color: $azul-color;
+    height: 74px;
+    display: flex;
+    font-family: Poppins;
+
+    h2{
+        color: $branco-color;
+        margin-top: 29px;
+        margin-left: 61px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    
+}
+
+
+.topo label{
+    margin-left: 165px;
+    margin-top: 20px;
+    background-color: $branco-color;
+    width: 174px;
+    height: 54px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+
+    h3{
+        color: $azul-color;
+        margin-top: 9px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+
+}
+
+.cabeçalho{
+    background-color: $cinza-color;
+    
 }
