@@ -1,6 +1,6 @@
 @use '../assets/sass/variables' as *;
 
-/*Header*/
+/*CABEÇALHO*/
 
 .topo{
     background-color: $azul-color;
@@ -40,7 +40,7 @@
 }
 
 
-/*Seção principal*/
+/*SEÇÃO PRINCIPAL TÍTULOS E HR*/
 
 .sprincipal{
     background-color: $cinza-color;
@@ -76,5 +76,23 @@
     margin-left: 391px;
 }
 
+/*SEÇÃO PRINCIPAL INTERAÇÃO COM USUÁRIO*/
 
+.usuario{
+    color: $branco-color;
+    margin-top: 39px;
+    margin-left: 391px;
+    display: flex
 
+    
+}
+
+.check{
+    //margin-left: ;
+}
+
+button{
+    background-color: $cinza-color;
+    border: none;
+    padding-left: 40px;
+}

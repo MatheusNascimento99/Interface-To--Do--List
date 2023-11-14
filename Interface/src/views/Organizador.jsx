@@ -3,6 +3,8 @@ import { todoList } from "../componentes/data";
 import Modal from "../componentes/Modal";
 import ConfirmarModal from "../componentes/ConfirmarModal";
 import "./Organizador.scss"
+import lixo from  "../image/lixo.svg";
+import caneta from "../image/caneta.svg";
 
 function Tarefas() {
   // Variáveis de estado usando o hook 'useState' para gerenciar o estado do componente
@@ -95,7 +97,7 @@ function Tarefas() {
 
         {/* Mapeando as tarefas para exibi-las */}
         {tarefas.map((e, index) => (
-          <div key={e.tarefa}>
+          <div key={e.tarefa} className="usuario">
             <label htmlFor="">
               {/* Renderização condicional para o modo de edição */}
               {editandoIndex === index ? (
@@ -113,7 +115,7 @@ function Tarefas() {
                   {e.tarefa}
 
                   {/* Checkbox para o status da tarefa */}
-                  <input
+                  <input className="check"
                     type="checkbox"
                     name=""
                     id=""
@@ -122,8 +124,8 @@ function Tarefas() {
                   />
 
                   {/* Botões para editar e excluir tarefas */}
-                  <button onClick={() => handleEditarClick(index)}>Editar</button>
-                  <button onClick={() => handleDeletarClick(index)}>Deletar</button>
+                  <button onClick={() => handleEditarClick(index)}><img className="img" src={caneta}/></button>
+                  <button onClick={() => handleDeletarClick(index)}><img className="img" src={lixo}/></button>
                 </>
               )}
             </label>
