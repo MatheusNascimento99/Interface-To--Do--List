@@ -84,8 +84,14 @@ function Tarefas() {
         <label><h3>Tarefa</h3></label>
         
       </div>
-      <div className="cabeçalho">
+      <div className="sprincipal">
         <h2>Otimize seu tempo e se organize com o nosso planejador diário</h2>
+        <section>
+        <h3>Tarefa</h3>
+        <h3>Status</h3>
+        <h3>Opções</h3>
+        </section>
+        <hr/>
 
         {/* Mapeando as tarefas para exibi-las */}
         {tarefas.map((e, index) => (
