@@ -4,7 +4,7 @@ Botei la no Netlify e na Vercel, mas tá dando "Not Found". Acho que é só o se
 
 https://interface-to-do-list.vercel.app/ <br> https://interface-list-to-do.netlify.app/
 
-Se alguém quiser dar uma olhada, é só clonar o repositório e brincar a vontade. A vibe é essa: a tecnologia unindo a galera! 🤖💻 Dá um conferida lá nas dependências para ver o que foi usado, então, se quiserem bisbilhotar, fiquem à vontade. 
+Se alguém quiser dar uma olhada, é só clonar o repositório e brincar um pouco. A vibe é essa: a tecnologia unindo a galera! 🤖💻 Dá um conferida lá nas dependências para ver o que foi usado, então, se quiserem bisbilhotar, fiquem à vontade. 
 Abração, e que a força da tecnologia esteja sempre com vocês! 😄 :smile: <br>
 Tudo nosso! 🚀👾
 
