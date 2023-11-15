@@ -34,7 +34,7 @@ function Modal({ mostrar, handleClose, handleConfirmar }) {
     return (
         <div style={estiloModal}>
             <div style={estiloConteudo}>
-                <h2 id='titulo'>Deseja editar esse item?</h2>
+                <h2 id='handleCancelarEdicao'>Deseja editar esse item?</h2>
                 <input id='novat' type="text" placeholder="Nova tarefa..." onChange={handleInputChange} />
                 <br />
                 <button className='btnnao' onClick={handleClose}>Não</button>

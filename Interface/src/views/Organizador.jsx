@@ -3,7 +3,7 @@ import { todoList } from "../componentes/data";
 import Modal from "../componentes/Modal";
 import ConfirmarModal from "../componentes/ConfirmarModal";
 import "./Organizador.scss"
-import lixo from  "../image/lixo.svg";
+import lixo from "../image/lixo.svg";
 import caneta from "../image/caneta.svg";
 
 function Tarefas() {
@@ -44,7 +44,7 @@ function Tarefas() {
   }
 
   // Manipulador de evento para cancelar a edição de uma tarefa
- 
+
 
   // Manipulador de evento para confirmar a edição de uma tarefa
   const handleConfirmarEdicao = (index, novoTexto) => {
@@ -53,6 +53,12 @@ function Tarefas() {
     setTarefas(tarefasAtualizadas);
     setEditandoIndex(null);
     setMostrarModal(false);
+  }
+
+  const handleCancelarEdicao = () => {
+    setEditandoIndex(null);
+    setMostrarModal(false);
+    setNovaTarefa("");
   }
 
   // Manipulador de evento para iniciar a exclusão de uma tarefa
@@ -81,16 +87,16 @@ function Tarefas() {
       <div className="topo">
         <h2>Organização</h2>
         <label><h3>Tarefa</h3></label>
-        
+
       </div>
       <div className="sprincipal">
         <h2>Otimize seu tempo e se organize com o nosso planejador diário</h2>
         <section>
-        <h3>Tarefa</h3>
-        <h3>Status</h3>
-        <h3>Opções</h3>
+          <h3>Tarefa</h3>
+          <h3>Status</h3>
+          <h3>Opções</h3>
         </section>
-        <hr/>
+        <hr />
 
         {/* Mapeando as tarefas para exibi-las */}
         {tarefas.map((e, index) => (
@@ -98,31 +104,37 @@ function Tarefas() {
             <label id="label" htmlFor="">
               {/* Renderização condicional para o modo de edição */}
               {editandoIndex === index ? (
-                <>
-                  
-                </>
+                <div className="txtIn">
+                  <input 
+                    type="text"
+                    value={e.tarefa}
+                    onChange={(event) => handleConfirmarEdicao(index, event.target.value)}
+                  />
+                  <button onClick={handleCancelarEdicao}>Cancelar</button>
+                  <button onClick={() => handleConfirmarEdicao(index, e.tarefa)}>Confirmar</button>
+                </div>
               ) : (
                 <>
                   {e.tarefa}
 
                   {/* Checkbox para o status da tarefa */}
-                  
-                  
+
+
                 </>
               )}<div className="uni">
                 <input className="check"
-                    type="checkbox"
-                    name=""
-                    id=""
-                    checked={e.status}
-                    onChange={() => handleCheckboxChange(index)}
-                  />
+                  type="checkbox"
+                  name=""
+                  id="CK"
+                  checked={e.status}
+                  onChange={() => handleCheckboxChange(index)}
+                />
 
-                  {/* Botões para editar e excluir tarefas */}
-                  <div className="icons">
-                  <button onClick={() => handleEditarClick(index)}><img className="img" src={caneta}/></button>
-                  <button onClick={() => handleDeletarClick(index)}><img className="img" src={lixo}/></button>
-                  </div>
+                {/* Botões para editar e excluir tarefas */}
+                <div className="icons">
+                  <button onClick={() => handleEditarClick(index)}><img className="img" src={caneta} /></button>
+                  <button onClick={() => handleDeletarClick(index)}><img className="img" src={lixo} /></button>
+                </div>
               </div>
             </label>
           </div>
@@ -153,9 +165,9 @@ function Tarefas() {
           handleConfirmar={handleConfirmarDelecao}
         />
       </div>
-      </>
-        
-    )
+    </>
+
+  )
 }
 
 // Exportando o componente para uso em outras partes da aplicação
