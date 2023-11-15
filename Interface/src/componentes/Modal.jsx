@@ -32,8 +32,8 @@ function Modal({ mostrar, handleClose, handleConfirmar }) {
     return (
         <div style={estiloModal}>
             <div style={estiloConteudo}>
-                <h2>Deseja editar esse item?</h2>
-                <input type="text" placeholder="Colocar a descrição da tarefa aqui" onChange={handleInputChange} />
+                <h2 id='titulo'>Deseja editar esse item?</h2>
+                <input id='novat' type="text" placeholder="Nova tarefa..." onChange={handleInputChange} />
                 <br />
                 <button onClick={handleClose}>Não</button>
                 <button onClick={() => handleConfirmar(novoNomeTarefa)}>Sim</button>
