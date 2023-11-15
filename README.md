@@ -1,8 +1,10 @@
 # Interface experimental com React e Router
-Olá pessoal!! Nesse projeto de lista foi utilizado React Vite para uma rota única, e disposto a construção para uso de lista de afazeres,
-com possibilidade de marcar e desmarcar o que foi feito e também editar ou apagar as tarefas. Disponibilizei no Netlify e Vercel, porém acusa até o momento
-Not Found, possívelmente algum problema no servidor momentaneo, pois não encontrei erros na construção do projeto, mas fique a vontade para clonar, verificar e usar, 
-forte abraço, que a tecnologia possa nos uni sempre. :smile:
+E aí, galera! 🚀 Acabei de botar pra jogo um projeto massa usando React com Vite. É algo simples, uma listinha de afazeres, saca? Dá pra marcar, desmarcar, editar e até apagar as tarefas.
+Botei la no Netlify e na Vercel, mas tá dando "Not Found". Acho que é só o servidor arriando, porque no projeto não achei nenhum bug, tá tudo nos trinques.
+
+Se alguém quiser dar uma olhada, é só clonar o repositório e brincar a vontade. A vibe é essa: a tecnologia unindo a galera! 🤖💻 Dá um conferida lá nas dependências para ver o que foi usado, então, se quiserem bisbilhotar, fiquem à vontade. 
+Abração, e que a força da tecnologia esteja sempre com vocês! 😄 :smile: <br>
+Tudo nosso! 🚀👾
 
 ![image](https://github.com/MatheusNascimento99/Interface-To--Do--List/assets/139829100/62165c1d-f242-4f10-b1cd-0429bce32203)
 
