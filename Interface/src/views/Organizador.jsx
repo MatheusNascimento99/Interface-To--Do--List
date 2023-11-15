@@ -44,7 +44,10 @@ function Tarefas() {
   }
 
   // Manipulador de evento para cancelar a edição de uma tarefa
-
+  const handleCancelarEdicao = () => {
+    setEditandoIndex(null);
+    setMostrarModal(false);
+  }
 
   // Manipulador de evento para confirmar a edição de uma tarefa
   const handleConfirmarEdicao = (index, novoTexto) => {
@@ -101,50 +104,45 @@ function Tarefas() {
         {/* Mapeando as tarefas para exibi-las */}
         {tarefas.map((e, index) => (
           <div key={e.tarefa} className="usuario">
-            <label id="label" htmlFor="">
+            <label htmlFor="">
               {/* Renderização condicional para o modo de edição */}
               {editandoIndex === index ? (
-                <div className="txtIn">
-                  <input 
+                <>
+                  <input
                     type="text"
                     value={e.tarefa}
                     onChange={(event) => handleConfirmarEdicao(index, event.target.value)}
                   />
                   <button onClick={handleCancelarEdicao}>Cancelar</button>
                   <button onClick={() => handleConfirmarEdicao(index, e.tarefa)}>Confirmar</button>
-                </div>
+                </>
               ) : (
                 <>
                   {e.tarefa}
 
                   {/* Checkbox para o status da tarefa */}
+                  <input className="check"
+                    type="checkbox"
+                    name=""
+                    id=""
+                    checked={e.status}
+                    onChange={() => handleCheckboxChange(index)}
+                  />
 
-
+                  {/* Botões para editar e excluir tarefas */}
+                  <button onClick={() => handleEditarClick(index)}><img className="img" src={caneta}/></button>
+                  <button onClick={() => handleDeletarClick(index)}><img className="img" src={lixo}/></button>
                 </>
-              )}<div className="uni">
-                <input className="check"
-                  type="checkbox"
-                  name=""
-                  id="CK"
-                  checked={e.status}
-                  onChange={() => handleCheckboxChange(index)}
-                />
-
-                {/* Botões para editar e excluir tarefas */}
-                <div className="icons">
-                  <button onClick={() => handleEditarClick(index)}><img className="img" src={caneta} /></button>
-                  <button onClick={() => handleDeletarClick(index)}><img className="img" src={lixo} /></button>
-                </div>
-              </div>
+              )}
             </label>
           </div>
         ))}
 
         {/* Entrada e botão para adicionar uma nova tarefa */}
-        <div className="txtIn">
-          <input id="txtIn"
+        <div>
+          <input
             type="text"
-            placeholder="Nova tarefa..."
+            placeholder="Adicionar uma nova tarefa"
             value={novaTarefa}
             onChange={(e) => setNovaTarefa(e.target.value)}
           />

@@ -82,49 +82,17 @@
     color: $branco-color;
     margin-top: 39px;
     margin-left: 391px;
+    display: flex
+
+    
 }
 
-#label{
-    font-size: 25px;
-    font-family: raleway;
-    font-weight: 400;
+.check{
+    //margin-left: ;
 }
-
-.uni{
-    display: flex;
-}
-
-.check {
-    margin-left: 340px;
-}
-
-
-
-.icons{
-    margin-left: 140px;
-}
-
 
 button{
     background-color: $cinza-color;
     border: none;
     padding-left: 40px;
-}
-
-.txtIn button{
-    font-size: 38px;
-    color: $branco-color;
-    margin-left: 295px;
-    margin-top: 44px;
-}
-
-#txtIn{
-    margin-left: 391px;
-    border: none;
-    background-color: $cinza-color;
-    color: $branco-color;
-    font-size: 25px;
-    font-weight: 400;
-    font-family: raleway;
-    /*colocar fontes novamente ralewas italic 400*/ 
 }

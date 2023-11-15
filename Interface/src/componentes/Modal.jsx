@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PropTypes from "prop-types";
-import "./Modal.scss"
 
 function Modal({ mostrar, handleClose, handleConfirmar }) {
     const [novoNomeTarefa, setNovoNomeTarefa] = useState("");
@@ -14,17 +13,16 @@ function Modal({ mostrar, handleClose, handleConfirmar }) {
         width: '100%',
         height: '100%',
         overflow: 'auto',
-        backgroundColor: 'rgba(0,0,0,0.0)',
+        backgroundColor: 'rgba(0,0,0,0.4)',
         padding: '50px'
     };
 
     const estiloConteudo = {
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#fefefe',
         margin: '15% auto',
         padding: '20px',
         border: '1px solid #888',
-        width: '758px',
-        height: '436px',
+        width: '80%'
     };
 
     const handleInputChange = (event) => {
@@ -34,11 +32,11 @@ function Modal({ mostrar, handleClose, handleConfirmar }) {
     return (
         <div style={estiloModal}>
             <div style={estiloConteudo}>
-                <h2 id='handleCancelarEdicao'>Deseja editar esse item?</h2>
-                <input id='novat' type="text" placeholder="Nova tarefa..." onChange={handleInputChange} />
+                <h2>Deseja editar esse item?</h2>
+                <input type="text" placeholder="Colocar a descrição da tarefa aqui" onChange={handleInputChange} />
                 <br />
-                <button className='btnnao' onClick={handleClose}>Não</button>
-                <button className='btnsim' onClick={() => handleConfirmar(novoNomeTarefa)}>Sim</button>
+                <button onClick={handleClose}>Não</button>
+                <button onClick={() => handleConfirmar(novoNomeTarefa)}>Sim</button>
             </div>
         </div>
     );

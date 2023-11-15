@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import "./ConfirmarModal.scss"
 
 function ConfirmarModal({ mostrar, handleClose, handleConfirmar }) {
     const estiloModal = {
@@ -11,25 +10,24 @@ function ConfirmarModal({ mostrar, handleClose, handleConfirmar }) {
         width: '100%',
         height: '100%',
         overflow: 'auto',
-        backgroundColor: 'rgba(0,0,0,0.0)',
+        backgroundColor: 'rgba(0,0,0,0.4)',
         padding: '50px'
     };
 
     const estiloConteudo = {
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#fefefe',
         margin: '15% auto',
         padding: '20px',
         border: '1px solid #888',
-        width: '758px',
-        height: '436px',
+        width: '80%'
     };
 
     return (
         <div style={estiloModal}>
             <div style={estiloConteudo}>
-                <h2 id='excluirtitulo'>Deseja mesmo excluir esse item?</h2>
-                <button className="cbtnnao" onClick={handleClose}>Não</button>
-                <button className="cbtsim" onClick={handleConfirmar}>Sim</button>
+                <h2>Deseja mesmo excluir esse item?</h2>
+                <button onClick={handleClose}>Não</button>
+                <button onClick={handleConfirmar}>Sim</button>
             </div>
         </div>
     );
