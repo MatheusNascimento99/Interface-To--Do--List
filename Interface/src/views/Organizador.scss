@@ -2,6 +2,9 @@
 
 /*CABEÇALHO*/
 
+
+
+
 .topo{
     background-color: $azul-color;
     height: 74px;
@@ -82,30 +85,36 @@
     color: $branco-color;
     margin-top: 39px;
     margin-left: 391px;
-    display: flex
-}
+    font-size: 25px;
+    font-family: Raleway;
+    font-weight: 400;
 
 .usuario label{
     font-size: 25px;
     color: $branco-color;
     font-weight: 400;
     font-family: Relaway;
+    display: flex
+}
 }
 
-#check{
-    margin-left: 340px;
+.edicao{
+    color: $branco-color;
+    font-weight: bold;
+}
+
+.box{
+    margin-left: 332px;
     width: 18px;
     height: 18px;
-    background-color: $cinza-color;
-}
 
-.uni input{
-    font-size: 45px;
+    
 }
 
 
 .icons{
-    margin-left: 140px;
+    margin-left: 132px;
+
 }
 
 button{
@@ -119,12 +128,14 @@ button{
 }
 
 .entrada{
+    font-size: 25px;
     margin-left: 391px;
     border: none;
+    width: 565px;
     background-color: $cinza-color;
-    font-size: 25px;
     font-weight: 400;
-    font-family: raleway;
+    font-family: Raleway;
+    font-style: italic;
     color: $branco-color;
     margin-bottom:  202px;
     
@@ -132,6 +143,6 @@ button{
 
 #bte{
     color: $branco-color;
-    margin-left: 296px;
+    margin-left: px;
     font-size: 38px;
 }

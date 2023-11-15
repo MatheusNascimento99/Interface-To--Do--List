@@ -107,8 +107,8 @@ function Tarefas() {
                     value={e.tarefa}
                     onChange={(event) => handleConfirmarEdicao(index, event.target.value)}
                   />
-                  <button onClick={handleCancelarEdicao}>Cancelar</button>
-                  <button onClick={() => handleConfirmarEdicao(index, e.tarefa)}>Confirmar</button>
+                  <button className="edicao" onClick={handleCancelarEdicao}>Cancelar</button>
+                  <button className="edicao" onClick={() => handleConfirmarEdicao(index, e.tarefa)}>Confirmar</button>
                 </>
               ) : (
                 <>
@@ -121,6 +121,7 @@ function Tarefas() {
               )}<div className="uni">
 
                 <input
+                  className="box"
                   type="checkbox"
                   name=""
                   id={`check-${index}`}
