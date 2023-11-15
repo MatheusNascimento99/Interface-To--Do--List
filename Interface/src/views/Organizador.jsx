@@ -102,9 +102,6 @@ function Tarefas() {
               {/* Renderização condicional para o modo de edição */}
               {editandoIndex === index ? (
                 <>
-                  
-                </>
-                <>
                   <input
                     type="text"
                     value={e.tarefa}
@@ -122,17 +119,11 @@ function Tarefas() {
                   
                 </>
               )}<div className="uni">
-                <input className="check"
-                    type="checkbox"
-                    name=""
-                    id=""
-                    checked={e.status}
-                    onChange={() => handleCheckboxChange(index)}
-                  />
+                
                   <input className="check"
                     type="checkbox"
                     name=""
-                    id=""
+                    id="check"
                     checked={e.status}
                     onChange={() => handleCheckboxChange(index)}
                   />
@@ -149,13 +140,13 @@ function Tarefas() {
 
         {/* Entrada e botão para adicionar uma nova tarefa */}
         <div>
-          <input
+          <input className="entrada"
             type="text"
-            placeholder="Adicionar uma nova tarefa"
+            placeholder="Nova tarefa..."
             value={novaTarefa}
             onChange={(e) => setNovaTarefa(e.target.value)}
           />
-          <button onClick={adicionarTarefa}> + </button>
+          <button id="bte" onClick={adicionarTarefa}> + </button>
         </div>
 
         {/* Modal para editar tarefas */}

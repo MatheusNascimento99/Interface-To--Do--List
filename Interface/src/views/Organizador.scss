@@ -83,14 +83,28 @@
     margin-top: 39px;
     margin-left: 391px;
     display: flex
-
-    
 }
 
-.check{
+.usuario label{
+    font-size: 25px;
+    color: $branco-color;
+    font-weight: 400;
+    font-family: Relaway;
+}
+
+#check{
     margin-left: 340px;
-    
+    width: 18px;
+    height: 18px;
+    background-color: $cinza-color;
 }
+
+.uni input{
+    font-size: 45px;
+
+
+}
+
 
 .icons{
     margin-left: 140px;
@@ -100,4 +114,26 @@ button{
     background-color: $cinza-color;
     border: none;
     padding-left: 40px;
+}
+
+.uni{
+    display: flex;
+}
+
+.entrada{
+    margin-left: 391px;
+    border: none;
+    background-color: $cinza-color;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: raleway;
+    color: $branco-color;
+    margin-bottom:  202px;
+    
+}
+
+#bte{
+    color: $branco-color;
+    margin-left: 296px;
+    font-size: 38px;
 }
