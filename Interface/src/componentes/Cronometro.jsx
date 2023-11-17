@@ -50,7 +50,7 @@ const Cronometro = () => {
       <p >
         {String(horas).padStart(2, '0')}:{String(minutos).padStart(2, '0')}:{String(segundos).padStart(2, '0')}
       </p>
-      <div className='bt'>
+      <div className='btcro'>
       <button onClick={iniciarCronometro}>Iniciar</button>
       <button onClick={pausarCronometro}>Pausar</button>
       <button onClick={zerarCronometro}>Zerar</button>

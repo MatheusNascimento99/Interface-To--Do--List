@@ -1,10 +1,39 @@
+@use '../assets/sass/variables' as *;
+
 .contagem{
     display: flex;
-flex-direction: row;
-
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
+
+.contagem label h1{
+    margin: 0px;
+    margin-top: 50px;
+    color: $branco-color;
+    
+}
+
+#dataLancamento{
+    width: 50%;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 
 .data{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    font-size: 30px;
+    color: $branco-color;
+    font-weight: bold;
+    margin-left:10px ;
+    margin-right: 10px;
 }
+

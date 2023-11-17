@@ -1,4 +1,4 @@
-
+import "../componentes/ContadorNiver.scss";
 import { useState, useEffect } from 'react';
 
 const ContadorNiver = () => {
@@ -33,9 +33,9 @@ const ContadorNiver = () => {
     const formatoTempo = (tempo) => (tempo < 10 ? `0${tempo}` : tempo);
 
     return (
-        <div className='contagem'>
-            <div >
-                <label htmlFor="dataLancamento">Digite a data de lançamento:</label>
+        <div >
+            <div className='contagem'>
+                <label htmlFor="dataLancamento"> <h1>Informe o próximo aniversário:</h1></label>
 
                 <input
                     type="date"
@@ -45,11 +45,14 @@ const ContadorNiver = () => {
                 />
             </div>
             <div className='data'>
-                <p id="dia">{finalDias}</p>
-                <p id="hora">{formatoTempo(finalHoras)}</p>
-                <p id="minuto">{formatoTempo(finalMinutos)}</p>
-                <p id="segundo">{formatoTempo(finalSegundos)}</p>
+                <p id="dia">{finalDias}-Dias</p>
+                <p id="hora">{formatoTempo(finalHoras)}-Horas</p>
+                <p id="minuto">{formatoTempo(finalMinutos)}-Minutos</p>
+                <p id="segundo">{formatoTempo(finalSegundos)}-Segundos</p>
             </div>
+           
+
+
 
         </div>
 
