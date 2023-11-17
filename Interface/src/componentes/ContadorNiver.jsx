@@ -43,6 +43,7 @@ const ContadorNiver = () => {
                     value={dataLancamento}
                     onChange={handleInputChange}
                 />
+                <h6 className="Paragrafo">Faltam:</h6>
             </div>
             <div className='data'>
                 <p id="dia">{finalDias}-Dias</p>
