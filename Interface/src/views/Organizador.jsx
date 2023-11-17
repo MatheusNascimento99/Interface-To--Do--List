@@ -5,6 +5,8 @@ import ConfirmarModal from "../componentes/ConfirmarModal";
 import "./Organizador.scss"
 import lixo from "../image/lixo.svg";
 import caneta from "../image/caneta.svg";
+import Cronometro from "../componentes/Cronometro";
+import ContadorNiver from "../componentes/ContadorNiver";
 
 function Tarefas() {
   // Variáveis de estado usando o hook 'useState' para gerenciar o estado do componente
@@ -163,6 +165,15 @@ function Tarefas() {
           handleClose={handleCancelarDelecao}
           handleConfirmar={handleConfirmarDelecao}
         />
+
+        <footer className="footer">
+          <section className="section1">
+            <Cronometro />
+          </section>
+          <section className="section2">
+            <ContadorNiver />
+          </section>
+        </footer>
       </div>
     </>
 

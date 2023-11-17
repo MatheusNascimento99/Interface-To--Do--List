@@ -23,7 +23,7 @@
 
 
 .topo label{
-    margin-left: 265px;
+    margin-left: 165px;
     margin-top: 20px;
     background-color: $branco-color;
     width: 174px;
@@ -53,9 +53,9 @@
         font-size: 40px;
         font-weight: 600;
         font-family: Poppins;
-        padding-top: 145px;
-        padding-left: 64px;
-        padding-bottom: 93px;
+        padding-top: 45px;
+        padding-left: 120px;
+        padding-bottom: 40px;
     }
 
     hr{
@@ -145,4 +145,26 @@ button{
     color: $branco-color;
     margin-left: px;
     font-size: 38px;
+}
+
+
+/*ESTILIZAÇÃO RODAPÉ*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(224, 68, 224);
+    padding-bottom: 100px;
+}
+
+.section1{
+    width: 100%;
+    background-color: red;
+    
+}
+
+.section2{
+    background-color: rgb(98, 0, 255);
+    width: 100%;
+    
 }
