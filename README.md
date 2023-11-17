@@ -1,5 +1,5 @@
 # Interface experimental com React e Router
-E aí, galera! 🚀 Acabei de botar pra jogo um projeto massa usando React com Vite. É algo simples, uma listinha de afazeres, saca? Dá pra marcar, desmarcar, editar e até apagar as tarefas.
+E aí, galera!  Acabei de botar pra jogo um projeto massa usando React com Vite. É algo simples, uma listinha de afazeres, saca? Dá pra marcar, desmarcar, editar e até apagar as tarefas.
 Botei la no Netlify e na Vercel, mas tá dando "Not Found". Acho que é só o servidor arriando, porque no projeto não achei nenhum bug, tá tudo nos trinques.
 
 https://interface-to-do-list.vercel.app/ <br> https://interface-list-to-do.netlify.app/
