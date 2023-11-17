@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import "./Cronometro.scss"
 
 const Cronometro = () => {
@@ -45,14 +45,17 @@ const Cronometro = () => {
   };
 
   return (
-    <div>
+    <div className='cro'>
       <h1>Cronômetro</h1>
-      <p>
+      <p >
         {String(horas).padStart(2, '0')}:{String(minutos).padStart(2, '0')}:{String(segundos).padStart(2, '0')}
       </p>
+      <div className='bt'>
       <button onClick={iniciarCronometro}>Iniciar</button>
       <button onClick={pausarCronometro}>Pausar</button>
       <button onClick={zerarCronometro}>Zerar</button>
+      </div>
+      
     </div>
   );
 };

@@ -1,0 +1,39 @@
+@use '../assets/sass/variables' as *;
+
+.cro{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.cro h1{
+    color: $branco-color;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.cro p{
+    font-size: 30px;
+    color: $branco-color;
+    font-weight: bold;
+    margin-bottom: 25px;
+    
+}
+
+
+.bt{
+    align-items: center;
+}
+
+
+.cro button{
+    color: $branco-color ;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    padding: 0px;
+   
+}

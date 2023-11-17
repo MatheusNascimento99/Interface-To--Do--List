@@ -167,12 +167,12 @@ function Tarefas() {
         />
 
         <footer className="footer">
-          <section className="section1">
+          <div className="section1">
             <Cronometro />
-          </section>
-          <section className="section2">
+          </div>
+          <div className="section2">
             <ContadorNiver />
-          </section>
+          </div>
         </footer>
       </div>
     </>
