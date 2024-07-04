@@ -1,7 +1,7 @@
 # Adição de novas funcionalidades
 
 Como desafio proposto, o projeto foi aprimorado e adicionadas novas funcionalidades, especificamente um cronômetro e um contador regressivo, conforme descrição abaixo. A seguir, apresento as dependências utilizadas e suas respectivas versões. <br>
-Se, ao utilizar, constatar erros ou tiver dúvidas, por favor, entre em contato!:smiley:
+Se, ao utilizar, constatar erros ou tiver dúvidas, por favor, entre em contato! :smiley:
 
 ## Dependências de Produção:
 
